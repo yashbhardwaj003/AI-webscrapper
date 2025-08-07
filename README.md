@@ -19,9 +19,6 @@
 - **⚡ Batch Processing**: Handles large content through intelligent chunking
 - **🧹 Content Cleaning**: Advanced HTML parsing and text sanitization
 
-## 🚀 Live Demo
-
-Try the live demo: [AI Web Scraper](https://github.com/yashbhardwaj003/AI-webscrapper)
 
 ## 🏗️ Architecture
 
@@ -48,83 +45,7 @@ graph TD
 | **LLM Model** | LLaMA 3 | Natural language understanding |
 | **Environment** | Python Virtual Environment | Dependency management |
 
-## 📋 Prerequisites
 
-- **Python 3.8+**
-- **Chrome Browser** (for WebDriver)
-- **Ollama** (for LLaMA 3 model)
-- **4GB+ RAM** (recommended for AI model)
-
-## ⚡ Quick Start
-
-### 1. Clone & Setup Environment
-
-```bash
-git clone https://github.com/yashbhardwaj003/AI-webscrapper.git
-cd AI-webscrapper
-
-# Create virtual environment
-python -m venv ai-webscrape
-
-# Activate environment
-# Windows PowerShell:
-.\ai-webscrape\Scripts\Activate.ps1
-# Windows CMD:
-ai-webscrape\Scripts\activate.bat
-# macOS/Linux:
-source ai-webscrape/bin/activate
-```
-
-### 2. Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Setup Ollama & LLaMA 3
-
-```bash
-# Install Ollama (visit https://ollama.ai for installation)
-# Pull LLaMA 3 model
-ollama pull llama3
-
-# Start Ollama service
-ollama serve
-```
-
-### 4. Configure Environment
-
-Create a `.env` file:
-```env
-SBR_WEBDRIVER=your_remote_webdriver_url_here
-```
-
-### 5. Launch Application
-
-```bash
-streamlit run main.py
-```
-
-Visit `http://localhost:8501` to access the application.
-
-## 📖 Usage Guide
-
-### Basic Scraping
-
-1. **Enter URL**: Input any website URL in the text field
-2. **Scrape Content**: Click "Scrape Website" to extract and clean content
-3. **Review Data**: Examine the cleaned content in the expandable section
-
-### AI-Powered Extraction
-
-1. **Enter Query**: Describe what data you want to extract:
-   - `"Extract all email addresses"`
-   - `"Find product names and prices"`
-   - `"Get contact information"`
-   - `"List all links and their descriptions"`
-
-2. **Parse Content**: Click "Parse Content" to process with AI
-3. **Get Results**: View the precisely extracted structured data
 
 ### Example Queries
 
@@ -229,43 +150,6 @@ results = parse_with_ollama(chunks, "Extract all product information")
 - **Concurrent Processing**: Batch operations for speed
 - **Cache Implementation**: Reduces redundant scraping operations
 
-## 🔒 Ethical Considerations
-
-- **Robots.txt Compliance**: Always check site policies before scraping
-- **Rate Limiting**: Built-in delays to avoid overwhelming servers
-- **Legal Usage**: Ensure compliance with website terms of service
-- **Data Privacy**: Handle scraped data responsibly
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 🐛 Troubleshooting
-
-### Common Issues
-
-**ChromeDriver Issues**:
-```bash
-# Download ChromeDriver matching your Chrome version
-# Add to system PATH or project directory
-```
-
-**Ollama Connection Problems**:
-```bash
-# Ensure Ollama service is running
-ollama serve
-
-# Check model availability
-ollama list
-```
-
-**Memory Issues**:
-- Reduce chunk size in `split_dom_content()`
-- Use lighter AI models for resource-constrained environments
 
 ## 📈 Future Enhancements
 
@@ -286,7 +170,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Yash Bhardwaj**
 - GitHub: [@yashbhardwaj003](https://github.com/yashbhardwaj003)
-- LinkedIn: [Your LinkedIn Profile](https://linkedin.com/in/your-profile)
+- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/yash-bhardwaj-602587218/)
 
 ---
 
