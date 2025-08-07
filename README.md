@@ -101,28 +101,6 @@ ai-webscrapper/
     └── ...
 ```
 
-## 🧪 Code Examples
-
-### Custom Scraping Function
-
-```python
-from scrape import scrape_website, clean_body_content
-
-# Scrape any website
-html_content = scrape_website("https://example.com")
-clean_content = clean_body_content(html_content)
-print(clean_content[:500])  # Preview first 500 characters
-```
-
-### AI Parsing Integration
-
-```python
-from parse import parse_with_ollama, split_dom_content
-
-# Parse content with custom instructions
-chunks = split_dom_content(content, max_length=6000)
-results = parse_with_ollama(chunks, "Extract all product information")
-```
 
 ## 🔍 Key Components Explained
 
@@ -162,9 +140,6 @@ results = parse_with_ollama(chunks, "Extract all product information")
 - [ ] **Advanced AI Models**: GPT-4, Claude integration
 - [ ] **Real-time Monitoring**: Scraping job status tracking
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 👨‍💻 Author
 
@@ -172,15 +147,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - GitHub: [@yashbhardwaj003](https://github.com/yashbhardwaj003)
 - LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/yash-bhardwaj-602587218/)
 
----
-
-<div align="center">
-
-### ⭐ If you found this project helpful, please give it a star!
-
-![GitHub stars](https://img.shields.io/github/stars/yashbhardwaj003/AI-webscrapper?style=social)
-![GitHub forks](https://img.shields.io/github/forks/yashbhardwaj003/AI-webscrapper?style=social)
-
-**[🔗 Repository Link](https://github.com/yashbhardwaj003/AI-webscrapper)** | **[📧 Report Issues](https://github.com/yashbhardwaj003/AI-webscrapper/issues)**
 
 </div>
